@@ -2,9 +2,9 @@
 
 /**
  * print_pointer - Prints the value of a pointer variable
- * @types: List of arguments
- * @buffer: Buffer array to handle print
- * @flags: Calculates active flags
+ * @types: List of arguments to be printed
+ * @buffer: array to store output to be printed
+ * @flags: conatins infromation about active flags
  * @width: Width specifier
  * @precision: Precision specifier
  * @size: Size specifier
@@ -50,14 +50,14 @@ int print_pointer(va_list types, char buffer[],
 				width, flags, padd, extra_c, padd_start));
 }
 /**
- * print_non_printable - Prints non-printable characters
+ * print_non_printable - a function that prints non-printable characters
  * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags: Calculates active flags
  * @width: Width specifier
  * @precision: Precision specifier
  * @size: Size specifier
- * Return: Number of characters printed
+ * Return: the number of characters printed
  */
 int print_non_printable(va_list types, char buffer[],
 		int flags, int width, int precision, int size)
@@ -88,7 +88,7 @@ int print_non_printable(va_list types, char buffer[],
 	return (write(1, buffer, i + offset));
 }
 /**
- * print_reverse - Prints a string in reverse order
+ * print_reverse - a function that prints a string in reverse order
  * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags: Calculates active flags
