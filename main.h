@@ -20,7 +20,9 @@
 
 /**
  * struct fmt - Struct op
+ * Description: This struct represents an operation
  *
+ * Members:
  * @fmt: The format.
  * @fn: The function associated.
  */
